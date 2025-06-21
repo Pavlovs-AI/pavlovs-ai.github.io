@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="keywords" content="hexo, autumn" />
+    <title>
+        Pavlovs AI
+    </title>
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/favicon.ico" />
+     
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- highlight -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" />
+    <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad()
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/frontendsophie/hexo-infinite-scroll@2.0.0/dist/main.js"></script>
+
+    <script>
+        infiniteScroll()
+
+        window.addEventListener('DOMContentLoaded', function () {
+            const [
+                mainTitle,
+                mobileMenu,
+                mobileMainTitle,
+                mobileMenuBtn,
+                ipadMenuBtn,
+                aside,
+                closeBtn,
+            ] = getEle(
+                '#main-title',
+                '.mobile-menu',
+                '.mobile-menu h3',
+                '.mobile-menu button',
+                '.ipad-menu',
+                'aside',
+                'aside .close',
+            )
+            const io = new IntersectionObserver(entries => {
+                if (entries[0].intersectionRatio <= 0) {
+                    mobileMainTitle.classList.remove('invisibile')
+                } else {
+                    mobileMainTitle.classList.add('invisibile')
+                }
+            })
+            io.observe(mainTitle)
+
+            clickToggleAside(mobileMenuBtn)
+            clickToggleAside(ipadMenuBtn)
+            clickToggleAside(closeBtn, false)
+
+            const isMenuVisible = window.getComputedStyle(mobileMenu).display !== 'none'
+            if (isMenuVisible) document.body.style.background = 'none'
+
+            function getEle(...args) {
+                return args.map(arg => document.querySelector(arg))
+            }
+
+            function clickToggleAside(btn, show = true) {
+                btn.addEventListener('click', function () {
+                    if (show) {
+                        aside.style.display = 'block'
+                    } else {
+                        aside.style.display = 'none'
+                    }
+                })
+            }
+        })
+    </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+    <div class="container">
+        <header class="header">
+    <nav class="mobile-menu" style="background: url(https://cdn.jsdelivr.net/gh/frontendsophie/hexo-theme-autumn@1.0.0/source/img/button-bg.png) #f3f3f3">
+        <h3 class="invisibile">
+            <a href="/" class="logo">
+                Pavlovs AI
+            </a>
+        </h3>
+        <button class="menu">menu</button>
+    </nav>
+
+    <button class="ipad-menu menu">menu</button>
+
+    <h1 class="title" id="main-title">
+        <a href="/" class="logo">
+            Pavlovs AI
+        </a>
+    </h1>
+    <h2 class="desc">
+        
+    </h2>
+
+    <div class="links">
+        <ul>
+            
+            <li>
+                <a target="_blank" rel="noopener" href="https://github.com/Pavlovs-AI">
+                    Github
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</header>
+        <main class="main">
+            <article class="post">
+    
+    
+    
+    <h2 class="post-title">
+        Overview of Psychology
+    </h2>
+    <ul class="post-date">
+        <li>
+            2025-06-21
+        </li>
+        <li>
+            
+        </li>
+    </ul>
+    <div class="post-content">
+        <blockquote>
+<h1><span id="psychology-is-a-science">Psychology is a science</span></h1></blockquote>
+<p><strong>Empirical approach:</strong> an evidence-based method that draws on observation and experimentation.</p>
+<p>The study of psychology requires a scientific attitude. Testing of hypotheses is important in psychology.</p>
+<p>Three key elements of the scientific attitude:</p>
+<ol>
+<li>Curiosity</li>
+<li>Skepticism</li>
+<li>Humility</li>
+</ol>
+<p>Four main goals of psychology:</p>
+<ol>
+<li>Describe</li>
+<li>Explain</li>
+<li>Predict</li>
+<li>Change</li>
+</ol>
+<blockquote>
+<h1><span id="history-of-psychology">History of psychology</span></h1></blockquote>
+<p>The embryonic form of psychology can be dated back to before 300 B.C.E, philosopher Aristotle.</p>
+<h2><span id="birth-of-psychology">Birth of Psychology</span></h2><p>In 1879, Wilhelm Wundt established the first psychology laboratory at the University of Leipzig, Germany. This marked the birth of psychology.</p>
+<blockquote>
+<p>Wundt was seeking to measure “atoms of the mind”, which was the fastest and simplest mental processes. The machine measured how long it took for people to press a telegraph key after hearing a ball hit a platform.</p>
+</blockquote>
+<p>Psychology was organized into different schools of thought. Two early schools were structuralism and functionalism.</p>
+<h3><span id="structuralism"><strong>Structuralism</strong></span></h3><blockquote>
+<p>Wundt and Titchener</p>
+</blockquote>
+<blockquote>
+<p>Used introspection to reveal the structure of the human mind.</p>
+</blockquote>
+<p>Titchener aimed to classify and understand elements of the mind’s structure, engaging people in self-reflective <strong>introspection</strong>. This focuses on the sensations, feelings, images and the relationship between them.</p>
+<p>However, introspection was somewhat unreliable due to the individual differences of feelings and verbal ability. Structuralism waned as introspection failed.</p>
+<h3><span id="functionalism"><strong>Functionalism</strong></span></h3><blockquote>
+<p>Promoted by Jame; Influenced by Darwin</p>
+</blockquote>
+<blockquote>
+<p>Explore how mental and behavioral processes function and contribute to adaptation, survival and flourishing.</p>
+</blockquote>
+<p>William James considered the evolved functions beyond the inward thoughts of structuralism. He assumed that thinking developed as an <strong>adaptation</strong> which helped to survive and reproduce.</p>
+<p>Calkins was the first female president of the American Psychological Association (APA).</p>
+<p>Washburn was the first official female psychology Ph.D. who wrote <em>The Animal Mind</em> and became the second female president.</p>
+<h2><span id="development-of-psychology">Development of Psychology</span></h2><p>Psychology was defined as “the science of mental life” in the early development of psychology. Watson and Skinner dismissed introspection and redefined psychology as “the scientific study of observable behavior”.</p>
+<h3><span id="behaviorism">Behaviorism</span></h3><blockquote>
+<p>Watson and Skinner</p>
+</blockquote>
+<ol>
+<li><blockquote>
+<p>Psychology should be an objective science.</p>
+</blockquote>
+</li>
+<li><blockquote>
+<p>Psychology studies behavior without reference to mental processes.</p>
+</blockquote>
+</li>
+</ol>
+<p>Behaviorism pointed out that sensations, feelings and thoughts were not observable, but behaviors are conditioned and can be observed and recorded, which respond to and learn in different situations.</p>
+<p>In a controversial study on a baby who became famous as “Little Albert”, Watson and his companion Rayner showed that fear could be learned.</p>
+<h3><span id="freudian-psychoanalytic-psychology">Freudian (Psychoanalytic) Psychology</span></h3><blockquote>
+<p>Sigmund Freud</p>
+</blockquote>
+<blockquote>
+<p>Emphasized the way our unconscious mind and childhood experiences affect our behavior.</p>
+</blockquote>
+<h3><span id="humanistic-psychology">Humanistic Psychology</span></h3><blockquote>
+<p>Rogers and Maslow</p>
+</blockquote>
+<blockquote>
+<p>Focused on growth potential, needs for love and acceptance, and the environments that nurture or limit personal growth.</p>
+</blockquote>
+<h2><span id="contemporary-psychology">Contemporary psychology</span></h2><p>Psychologists in the 1960s pioneered a <strong>cognitive revolution</strong> simultaneous with humanistic psychology’s emergence. This led the field back to its early interest in how our mind processes and retained information.</p>
+<p><strong>Cognitive psychology</strong>  the study of mental processes.</p>
+<p><strong>Cognitive neuroscience</strong>  the interdisciplinary study of the brain activity linked with cognition.</p>
+<p>Psychology is defined as “the science of behavior and mental process”.</p>
+<ul>
+<li>Behavior: any action we can observe and record.</li>
+<li>Mental processes: internal, subjective experiences.</li>
+</ul>
+<h3><span id="evolutionary-psychology-and-behavioral-genetics">Evolutionary Psychology and Behavioral Genetics</span></h3><blockquote>
+<p>the <strong>nature-nurture issue argues</strong> is the longstanding controversy over the relative contributions that genes and experience make to the development of psychological traits and behaviors.</p>
+</blockquote>
+<blockquote>
+<p>Nature: Plato, Descartes, etc.</p>
+</blockquote>
+<blockquote>
+<p>Nurture: Aristotle, Locke, etc.</p>
+</blockquote>
+<p>Darwin proposed the evolutionary process of <strong>natural selection</strong>, suggesting that nature selects traits that best enable an organism to survive and reproduce in a particular environment.</p>
+<p><strong>Evolutionary psychology</strong>  how humans are alike because of common biology and evolutionary history.</p>
+<p><strong>Behavioral genetics</strong>  how individuals differ because of differing genes and environments.</p>
+<blockquote>
+<p>Twin studies: comparing the effects of nature and nurture of identical twins with fraternal twins.</p>
+</blockquote>
+<h3><span id="cross-cultural-and-gender-psychology">Cross-Cultural and Gender Psychology</span></h3><blockquote>
+<p>The interplay and controversy between culture and biological nature; Differences between gender identity and sex.</p>
+</blockquote>
+<h3><span id="positive-psychology">Positive Psychology</span></h3><blockquote>
+<p>Martin Seligman</p>
+</blockquote>
+<blockquote>
+<p>Research on human flourishing that help us to thrive.</p>
+</blockquote>
+<p>Positive psychology aims to promote strengths and virtues that help individuals and communities to thrive.</p>
+<blockquote>
+<h1><span id="psychology-s-three-main-levels-of-analysis">Psychology’s Three Main Levels of Analysis</span></h1></blockquote>
+<p>The biopsychosocial approach:</p>
+<ol>
+<li>Biological approach</li>
+<li>Psychological approach</li>
+<li>Sociocultural approach</li>
+</ol>
+<p>Considers all biological, psychological and sociocultural approaches in analyzing a given behavior or mental process.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Perspective</strong></th>
+<th><strong>Focus</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Neuroscience</td>
+<td>How the body and brain enable mental processes</td>
+</tr>
+<tr>
+<td>Evolutionary</td>
+<td>How the natural selection of traits has promoted the survival of genes</td>
+</tr>
+<tr>
+<td>Behavior genetics</td>
+<td>How genes and environment influence individual differences</td>
+</tr>
+<tr>
+<td>Psychodynamic</td>
+<td>How behavior springs from unconscious drives and conflicts</td>
+</tr>
+<tr>
+<td>Behavioral</td>
+<td>How we learn observable responses</td>
+</tr>
+<tr>
+<td>Cognitive</td>
+<td>How we encode, process, store and retrieve information</td>
+</tr>
+<tr>
+<td>Social-cultural</td>
+<td>How behavior and thinking vary across situations and cultures</td>
+</tr>
+</tbody></table>
+<p>Subfields of psychology focus on either <strong>basic research</strong> (pure science that aims to increase the scientific knowledge base) or <strong>applied research</strong> (scientific study that aims to solve practical problems).</p>
+
+    </div>
+</article>
+        </main>
+        <aside class="aside">
+            <div class="close"></div>
+            <section class="aside-section">
+                
+    <h1>Categories</h1>
+
+    
+
+            </section>
+            <section class="aside-section">
+                
+    <h1>Archives</h1>
+
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a></li></ul>
+
+
+            </section>
+            <section class="aside-section tag">
+                
+    <h1>Tags</h1>
+
+    <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/" rel="tag">Notes</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Psychology/" rel="tag">Psychology</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Self-study/" rel="tag">Self-study</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tips/" rel="tag">Tips</a></li></ul>
+
+            </section>
+        </aside>
+    </div>
+</body>
+
+</html>
